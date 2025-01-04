@@ -3,7 +3,7 @@
     "description": "I'm Web Session Generator by mx Me mx",
     "logo": "",
     "repository": "https://github.com/Giftedmaurice/giftedmdV2-session-generator",
-    "keywords": ["@Xcelsama"],
+    "keywords": ["@mxpair"],
     "success_url": "/", 
     "buildpacks": [{ "url": "https://github.com/heroku/heroku-buildpack-nodejs#latest" } ],
     "env": {      

@@ -63,8 +63,8 @@ router.get('/', async (req, res) => {
 				   *_Made With MXGAMECODER_*
 				   ______________________________________
 				   ╔════◇
-				   ║ *『 WOW YOU'VE CHOSEN FOOL 』*
-				   ║ _You Have Completed the First Step to Deploy a Whatsapp Bot._
+				   ║ *『 WOW! WELCOME TO THE SAD REALM 』*
+				   ║ _You Have Completed the First Step to Deploy MX._
 				   ╚════════════════════════╝
 				   _____________________________________
 				   

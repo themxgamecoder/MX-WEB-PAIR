@@ -54,19 +54,45 @@ router.get('/', async (req, res) => {
                 let data = fs.readFileSync(__dirname + `/temp/${id}/creds.json`);
                 await delay(800);
                let b64data = Buffer.from(data).toString('base64');
-               let session = await Pair_Code_By_Gifted_Tech.sendMessage(Pair_Code_By_Gifted_Tech.user.id, { text: 'mx-1.0;;;' + b64data });
+               let session = await Pair_Code_By_Gifted_Tech.sendMessage(Pair_Code_By_Gifted_Tech.user.id, { text: '' + b64data });
 
                let GIFTED_MD_TEXT = `
-*_Pair Code Connected by MXGAMECODER*
-*_Made With MXGAMECODER_*
-______________________________________
-╔════◇
-║ *『 WOW YOU'VE CHOSEN FOOL 』*
-║ _You Have Completed the First Step to Deploy a Whatsapp Bot._
-╚════════════════════════╝
-_____________________________________
+🎮 *_Pair Code Connected by MX-GΔMΞCØDΞR_* 🎮
+  
+💻 *_Made With ❤️ by MX-GΔMΞCØDΞR_* 💻  
+───────────────────────────────────────  
 
-_Don't Forget To Give Star To My Repo_`
+╔════════════════════════════════╗  
+║ 🌟 *『 WOW! WELCOME TO THE SAD REALM 』* 🌟
+║  
+║ You’ve successfully completed the first step to deploy *MX-1.0*.  
+║
+╚════════════════════════════════╝  
+
+📂 *『 BOT REPO 』* 📂  
+
+🔗 https://github.com/themxgamecoder/MX-1.0 
+
+───────────────────────────────────────  
+
+📢 *『 WHATSAPP CHANNEL 』* 📢  
+
+🔗 https://chat.whatsapp.com/CB3O8v4T6ho14mDO9TpBYZ
+
+───────────────────────────────────────  
+
+👥 *『 WHATSAPP GROUP 』* 👥  
+
+🔗 https://whatsapp.com/channel/0029Vavz0e6E50Ugp30Z6z0W  
+
+
+───────────────────────────────────────  
+
+✨ *2025 - MX-GΔMΞCØDΞR* ✨  
+
+💡 _Don’t forget to give a ⭐ to my repo!_  
+`
+
  await Pair_Code_By_Gifted_Tech.sendMessage(Pair_Code_By_Gifted_Tech.user.id,{text: GIFTED_MD_TEXT},{quoted:session})
  
 

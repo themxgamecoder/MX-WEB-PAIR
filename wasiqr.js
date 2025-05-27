@@ -64,7 +64,7 @@ router.get('/', async (req, res) => {
 				   ______________________________________
 				   ╔════◇
 				   ║ *『 WOW! WELCOME TO THE SAD REALM 』*
-				   ║ _You Have Completed the First Step to Deploy MX._
+				   ║ _You Have Completed the First Step to Deploy MEKA AI._
 				   ╚════════════════════════╝
 				   _____________________________________
 				   

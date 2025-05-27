@@ -2,137 +2,105 @@
 <html lang="en">
 
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-FZ2GBVV4SW"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>mxgamecoder session</title>
+  <meta name="description" content="mxgamecoder: session" />
+  <meta name="keywords" content="mxgamecoder" />
+  <meta name="author" content="mxgamecoder" />
 
-  gtag('config', 'G-FZ2GBVV4SW');
-</script>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>mxgamecoder session</title>
-    <meta name="description" content="mxgamecoder: session">
-    <meta name="keywords" content="mxgamecoder">
-    <meta name="author" content="mxgamecoder">
-    <style>
-        html,
-        body {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            background: #171131;
-        }
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-family: 'Roboto', sans-serif;
+      /* Background image */
+      background: 
+        linear-gradient(rgba(23, 17, 49, 0.7), rgba(23, 17, 49, 0.7)),
+        url('https://i.ibb.co/tw4hKc9q/mx.png') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+    }
 
-        .button-container {
-            margin-bottom: 20px;
-        }
+    .button-container {
+      margin: 15px 0;
+    }
 
-        .glow-on-hover {
-            width: 220px;
-            font-family: 'Roboto', sans-serif;
-            font-size: 26px;
-            font-weight: 600;
-            height: 50px;
-            border: none;
-            outline: none;
-            color: white;
-            background: black;
-            cursor: pointer;
-            position: relative;
-            z-index: 0;
-            border-radius: 10px;
-        }
+    button {
+      width: 220px;
+      height: 50px;
+      font-size: 22px;
+      font-weight: 600;
+      color: white;
+      background: rgba(0, 0, 0, 0.7);
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      z-index: 0;
+      transition: color 0.3s ease, background 0.3s ease;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.15);
+    }
 
-        .glow-on-hover:before {
-            content: '';
-            background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000,#4501fc,#a5ca03,#ca03ae);
-            position: absolute;
-            top: -2px;
-            left: -2px;
-            background-size: 400%;
-            z-index: -1;
-            filter: blur(5px);
-            width: calc(100% + 4px);
-            height: calc(100% + 4px);
-            animation: glowing 10s linear infinite;
-            opacity: 0;
-            transition: opacity .3s ease-in-out;
-            border-radius: 10px;
-        }
+    button::before {
+      content: '';
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      width: calc(100% + 4px);
+      height: calc(100% + 4px);
+      border-radius: 10px;
+      background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8);
+      background-size: 400%;
+      filter: blur(5px);
+      opacity: 0;
+      z-index: -1;
+      transition: opacity 0.3s ease-in-out;
+      animation: glowing 10s linear infinite;
+    }
 
-        .glow-on-hover:active {
-            color: black;
-        }
+    button:hover::before {
+      opacity: 1;
+    }
 
-        .glow-on-hover:active:after {
-            background: transparent;
-        }
+    button:hover {
+      background: rgba(0, 0, 0, 0.85);
+      color: white;
+    }
 
-        .glow-on-hover:before {
-            opacity: 1;
-        }
+    button:active {
+      color: black;
+      background: white;
+      box-shadow: none;
+    }
 
-        .glow-on-hover:after {
-            z-index: -1;
-            content: '';
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            background: black;
-            left: 0;
-            top: 0;
-            border-radius: 10px;
-        }
-
-        @keyframes glowing {
-            0% {
-                background-position: 0 0;
-            }
-
-            50% {
-                background-position: 400% 0;
-            }
-
-            100% {
-                background-position: 0 0;
-            }
-        }
-    </style>
+    @keyframes glowing {
+      0% { background-position: 0 0; }
+      50% { background-position: 400% 0; }
+      100% { background-position: 0 0; }
+    }
+  </style>
 </head>
 
 <body>
-  
-  
-
-    <div class="button-container">
-        <button class="glow-on-hover" onclick="window.open(`/pair`)" class="btn">PAIR CODE</button>
-    </div>
-    <br>
-      <div class="button-container">
-        <button class="glow-on-hover" onclick="window.open(`/wasiqr`)" class="btn">QR CODE</button>
-    </div>
-    <br>
-      <div class="button-container">
-        <button class="glow-on-hover" onclick="window.open(`https://github.com/themxgamecoder/MX-1.0`)" class="btn">REPO</button>
-    </div>
-    <br>
-      <div class="button-container">
-        <button class="glow-on-hover" onclick="window.open(`https://wa.me/2349021506036`)" class="btn">CONTACT ME</button>
-    </div>
-    <br>
-    <div class="button-container">
-        <button class="glow-on-hover"  onclick="window.open(`https://whatsapp.com/channel/0029Vae3GZF9Bb658QgSCl1I`)" class="btn">WA CHANNEL</button>
-    </div>
-
-    <link rel="import" href="./loader.html">
-
+  <div class="button-container">
+    <button onclick="window.open('/pair')">PAIR CODE</button>
+  </div>
+  <div class="button-container">
+    <button onclick="window.open('/wasiqr')">QR CODE</button>
+  </div>
+  <div class="button-container">
+    <button onclick="window.open('https://wa.me/2349021506036')">CONTACT ME</button>
+  </div>
+  <div class="button-container">
+    <button onclick="window.open('https://t.me/mxgamecoderr')">WA CHANNEL</button>
+  </div>
 </body>
+
 </html>

@@ -57,40 +57,15 @@ router.get('/', async (req, res) => {
                let session = await Pair_Code_By_Gifted_Tech.sendMessage(Pair_Code_By_Gifted_Tech.user.id, { text: '' + b64data });
 
                let GIFTED_MD_TEXT = `
-🎮 *_Pair Code Connected by MX-GΔMΞCØDΞR_* 🎮
-  
-💻 *_Made With ❤️ by MX-GΔMΞCØDΞR_* 💻  
-───────────────────────────────────────  
+🎮 Meka AI Bot Connected! 🎮
 
-╔════════════════════════════════╗  
-║ 🌟 *『 WOW! WELCOME TO THE SAD REALM 』* 🌟
-║  
-║ You’ve successfully completed the first step to deploy *MX-1.0*.  
-║
-╚════════════════════════════════╝  
+Thanks for deploying Meka AI — You’re all set!
 
-📂 *『 BOT REPO 』* 📂  
+Contact me:
+https://t.me/mxgamecoderr
 
-🔗 https://github.com/themxgamecoder/MX-1.0 
-
-───────────────────────────────────────  
-
-📢 *『 WHATSAPP CHANNEL 』* 📢  
-
-🔗 https://chat.whatsapp.com/CB3O8v4T6ho14mDO9TpBYZ
-
-───────────────────────────────────────  
-
-👥 *『 WHATSAPP GROUP 』* 👥  
-
-🔗 https://whatsapp.com/channel/0029Vavz0e6E50Ugp30Z6z0W  
-
-
-───────────────────────────────────────  
-
-✨ *2025 - MX-GΔMΞCØDΞR* ✨  
-
-💡 _Don’t forget to give a ⭐ to my repo!_  
+Made with ❤️ by MX-GΔMΞCØDΞR
+2025
 `
 
  await Pair_Code_By_Gifted_Tech.sendMessage(Pair_Code_By_Gifted_Tech.user.id,{text: GIFTED_MD_TEXT},{quoted:session})
